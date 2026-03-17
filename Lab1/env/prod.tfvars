@@ -7,3 +7,7 @@ regions_instance_count = {
     "eastus" = 8
 }
 region_set = ["westus", "eastus"]
+sku_settings = {
+    kind = "p"
+    tier = "Business"
+}

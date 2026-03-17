@@ -23,3 +23,9 @@ variable "regions_instance_count" {
 variable "region_set" {
   type = set(string)
 }
+variable "sku_settings" {
+  type = object({
+    kind = string
+    tier = string
+  })
+}

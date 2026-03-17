@@ -18,5 +18,8 @@ output "primary_region" {
   value = var.regions[0]
 }
 output "primary_region_instance" {
-  value = var.regions_instance_count["westus"]
+  value = var.regions_instance_count[var.regions[0]]
+}
+output "kind" {
+  value = var.sku_settings.kind
 }
