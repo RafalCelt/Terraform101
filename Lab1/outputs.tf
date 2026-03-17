@@ -14,3 +14,9 @@ output "api_key" {
   value     = "${var.api_key}bar"
   sensitive = true
 }
+output "primary_region" {
+  value = var.regions[0]
+}
+output "primary_region_instance" {
+  value = var.regions_instance_count["westus"]
+}
