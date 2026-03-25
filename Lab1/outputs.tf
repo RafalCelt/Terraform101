@@ -23,3 +23,7 @@ output "primary_region_instance" {
 output "kind" {
   value = var.sku_settings.kind
 }
+
+module  "charlie" {
+  source = "./modules/rando"
+}
