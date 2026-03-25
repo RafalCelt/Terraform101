@@ -24,6 +24,6 @@ output "kind" {
   value = var.sku_settings.kind
 }
 
-module  "charlie" {
-  source = "./modules/rando"
+output "charlie" {
+  value = module.charlie.random_string
 }
